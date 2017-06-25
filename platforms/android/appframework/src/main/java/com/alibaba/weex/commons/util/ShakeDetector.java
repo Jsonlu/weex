@@ -14,7 +14,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
-import javax.annotation.Nullable;
+//import javax.annotation.Nullable;
 
 /**
  * Listens for the user shaking their phone. Allocation-less once it starts listening.
@@ -33,13 +33,13 @@ public class ShakeDetector implements SensorEventListener {
 
   private final ShakeListener mShakeListener;
 
-  @Nullable
+//  @Nullable
   private SensorManager mSensorManager;
   private long mLastTimestamp;
   private int mCurrentIndex;
-  @Nullable
+//  @Nullable
   private double[] mMagnitudes;
-  @Nullable
+//  @Nullable
   private long[] mTimestamps;
 
   public ShakeDetector(ShakeListener listener) {

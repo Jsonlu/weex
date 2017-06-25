@@ -1,8 +1,5 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
     repositories {
-        // maven { url "http://mvnrepo.alibaba-inc.com/mvn/repository" }
         mavenCentral()
         jcenter()
     }
@@ -13,12 +10,26 @@ buildscript {
 
 allprojects {
     repositories {
-        // maven { url "http://mvnrepo.alibaba-inc.com/mvn/repository" }
         mavenCentral()
         jcenter()
+    }
+    ext {
+        compileSdkVersion = 24
+        buildToolsVersion = "23.0.2"
+        minSdkVersion = 14
+        appMinSdkVersion = 15
+        targetSdkVersion = 23
+        supportLibVersion = "23.1.1"
+        fastjsonLibVersion = "1.1.46.android"
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+gradle.taskGraph.whenReady { graph ->
+    if (project.hasProperty('noLint')) {
+        graph.allTasks.findAll { it.name ==~ /lint.*/ }*.enabled = false
+    }
 }

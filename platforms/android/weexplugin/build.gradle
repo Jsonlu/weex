@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion project.compileSdkVersion
+    buildToolsVersion project.buildToolsVersion
 
     defaultConfig {
         minSdkVersion 14
@@ -24,10 +24,7 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    provided 'com.android.support:support-v4:23.1.1'
-    provided 'com.android.support:appcompat-v7:23.1.1'
+    provided "com.android.support:support-v4:${project.supportLibVersion}"
+    provided "com.android.support:appcompat-v7:${project.supportLibVersion}"
     provided 'com.taobao.android:weex_sdk:0.10.0'
-    testCompile 'junit:junit:4.12'
-    // PLUGIN GRADLE EXTENSIONS START
-    // PLUGIN GRADLE EXTENSIONS END
 }

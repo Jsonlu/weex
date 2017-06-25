@@ -1,0 +1,373 @@
+The JavaCompile.setDependencyCacheDir() method has been deprecated and is scheduled to be removed in Gradle 4.0.
+Incremental java compilation is an incubating feature.
+The TaskInputs.source(Object) method has been deprecated and is scheduled to be removed in Gradle 4.0. Please use TaskInputs.file(Object).skipWhenEmpty() instead.
+:app:dependencies
+
+------------------------------------------------------------
+Project :app
+------------------------------------------------------------
+
+_debugAndroidTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugAndroidTestApk - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugAndroidTestCompile - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugApk - ## Internal use, do not manually configure ##
++--- com.taobao.android:weex_sdk:0.10.0
++--- project :weexplugin
++--- project :appframework
+|    +--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.facebook.fresco:fresco:0.10.0
+|    |    +--- com.facebook.fresco:drawee:0.10.0
+|    |    |    +--- com.android.support:support-v4:23.1.1
+|    |    |    |    \--- com.android.support:support-annotations:23.1.1
+|    |    |    \--- com.facebook.fresco:fbcore:0.10.0
+|    |    +--- com.facebook.fresco:fbcore:0.10.0
+|    |    \--- com.facebook.fresco:imagepipeline:0.10.0
+|    |         +--- com.android.support:support-v4:23.1.1 (*)
+|    |         +--- com.nineoldandroids:library:2.4.0
+|    |         +--- com.facebook.fresco:fbcore:0.10.0
+|    |         +--- com.facebook.fresco:imagepipeline-base:0.10.0
+|    |         |    +--- com.android.support:support-v4:23.1.1 (*)
+|    |         |    +--- com.nineoldandroids:library:2.4.0
+|    |         |    +--- com.facebook.fresco:fbcore:0.10.0
+|    |         |    \--- com.parse.bolts:bolts-android:1.1.4
+|    |         \--- com.parse.bolts:bolts-android:1.1.4
+|    \--- com.squareup.okhttp3:okhttp:3.8.1
+|         \--- com.squareup.okio:okio:1.13.0
++--- com.squareup.okhttp3:okhttp:3.8.1 (*)
++--- com.alibaba:fastjson:1.1.46.android
++--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:appcompat-v7:23.1.1
+|    \--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:design:23.1.1
+|    +--- com.android.support:appcompat-v7:23.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:23.1.1
+|    |    +--- com.android.support:support-annotations:23.1.1
+|    |    \--- com.android.support:support-v4:23.1.1 (*)
+|    \--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:support-annotations:23.1.1
++--- com.taobao.android:weex_inspector:0.10.0.5
+\--- com.journeyapps:zxing-android-embedded:3.4.0
+     +--- com.google.zxing:core:3.2.1
+     \--- com.android.support:support-v4:23.1.0 -> 23.1.1 (*)
+
+_debugCompile - ## Internal use, do not manually configure ##
++--- com.taobao.android:weex_sdk:0.10.0
++--- project :weexplugin
++--- project :appframework
+|    +--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.facebook.fresco:fresco:0.10.0
+|    |    +--- com.facebook.fresco:drawee:0.10.0
+|    |    |    +--- com.android.support:support-v4:23.1.1
+|    |    |    |    \--- com.android.support:support-annotations:23.1.1
+|    |    |    \--- com.facebook.fresco:fbcore:0.10.0
+|    |    +--- com.facebook.fresco:fbcore:0.10.0
+|    |    \--- com.facebook.fresco:imagepipeline:0.10.0
+|    |         +--- com.android.support:support-v4:23.1.1 (*)
+|    |         +--- com.nineoldandroids:library:2.4.0
+|    |         +--- com.facebook.fresco:fbcore:0.10.0
+|    |         +--- com.facebook.fresco:imagepipeline-base:0.10.0
+|    |         |    +--- com.android.support:support-v4:23.1.1 (*)
+|    |         |    +--- com.nineoldandroids:library:2.4.0
+|    |         |    +--- com.facebook.fresco:fbcore:0.10.0
+|    |         |    \--- com.parse.bolts:bolts-android:1.1.4
+|    |         \--- com.parse.bolts:bolts-android:1.1.4
+|    \--- com.squareup.okhttp3:okhttp:3.8.1
+|         \--- com.squareup.okio:okio:1.13.0
++--- com.squareup.okhttp3:okhttp:3.8.1 (*)
++--- com.alibaba:fastjson:1.1.46.android
++--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:appcompat-v7:23.1.1
+|    \--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:design:23.1.1
+|    +--- com.android.support:appcompat-v7:23.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:23.1.1
+|    |    +--- com.android.support:support-annotations:23.1.1
+|    |    \--- com.android.support:support-v4:23.1.1 (*)
+|    \--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:support-annotations:23.1.1
++--- com.taobao.android:weex_inspector:0.10.0.5
+\--- com.journeyapps:zxing-android-embedded:3.4.0
+     +--- com.google.zxing:core:3.2.1
+     \--- com.android.support:support-v4:23.1.0 -> 23.1.1 (*)
+
+_debugUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugUnitTestApk - ## Internal use, do not manually configure ##
+No dependencies
+
+_debugUnitTestCompile - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseApk - ## Internal use, do not manually configure ##
++--- com.taobao.android:weex_sdk:0.10.0
++--- project :weexplugin
++--- project :appframework
+|    +--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.facebook.fresco:fresco:0.10.0
+|    |    +--- com.facebook.fresco:drawee:0.10.0
+|    |    |    +--- com.android.support:support-v4:23.1.1
+|    |    |    |    \--- com.android.support:support-annotations:23.1.1
+|    |    |    \--- com.facebook.fresco:fbcore:0.10.0
+|    |    +--- com.facebook.fresco:fbcore:0.10.0
+|    |    \--- com.facebook.fresco:imagepipeline:0.10.0
+|    |         +--- com.android.support:support-v4:23.1.1 (*)
+|    |         +--- com.nineoldandroids:library:2.4.0
+|    |         +--- com.facebook.fresco:fbcore:0.10.0
+|    |         +--- com.facebook.fresco:imagepipeline-base:0.10.0
+|    |         |    +--- com.android.support:support-v4:23.1.1 (*)
+|    |         |    +--- com.nineoldandroids:library:2.4.0
+|    |         |    +--- com.facebook.fresco:fbcore:0.10.0
+|    |         |    \--- com.parse.bolts:bolts-android:1.1.4
+|    |         \--- com.parse.bolts:bolts-android:1.1.4
+|    \--- com.squareup.okhttp3:okhttp:3.8.1
+|         \--- com.squareup.okio:okio:1.13.0
++--- com.squareup.okhttp3:okhttp:3.8.1 (*)
++--- com.alibaba:fastjson:1.1.46.android
++--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:appcompat-v7:23.1.1
+|    \--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:design:23.1.1
+|    +--- com.android.support:appcompat-v7:23.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:23.1.1
+|    |    +--- com.android.support:support-annotations:23.1.1
+|    |    \--- com.android.support:support-v4:23.1.1 (*)
+|    \--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:support-annotations:23.1.1
++--- com.taobao.android:weex_inspector:0.10.0.5
+\--- com.journeyapps:zxing-android-embedded:3.4.0
+     +--- com.google.zxing:core:3.2.1
+     \--- com.android.support:support-v4:23.1.0 -> 23.1.1 (*)
+
+_releaseCompile - ## Internal use, do not manually configure ##
++--- com.taobao.android:weex_sdk:0.10.0
++--- project :weexplugin
++--- project :appframework
+|    +--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.facebook.fresco:fresco:0.10.0
+|    |    +--- com.facebook.fresco:drawee:0.10.0
+|    |    |    +--- com.android.support:support-v4:23.1.1
+|    |    |    |    \--- com.android.support:support-annotations:23.1.1
+|    |    |    \--- com.facebook.fresco:fbcore:0.10.0
+|    |    +--- com.facebook.fresco:fbcore:0.10.0
+|    |    \--- com.facebook.fresco:imagepipeline:0.10.0
+|    |         +--- com.android.support:support-v4:23.1.1 (*)
+|    |         +--- com.nineoldandroids:library:2.4.0
+|    |         +--- com.facebook.fresco:fbcore:0.10.0
+|    |         +--- com.facebook.fresco:imagepipeline-base:0.10.0
+|    |         |    +--- com.android.support:support-v4:23.1.1 (*)
+|    |         |    +--- com.nineoldandroids:library:2.4.0
+|    |         |    +--- com.facebook.fresco:fbcore:0.10.0
+|    |         |    \--- com.parse.bolts:bolts-android:1.1.4
+|    |         \--- com.parse.bolts:bolts-android:1.1.4
+|    \--- com.squareup.okhttp3:okhttp:3.8.1
+|         \--- com.squareup.okio:okio:1.13.0
++--- com.squareup.okhttp3:okhttp:3.8.1 (*)
++--- com.alibaba:fastjson:1.1.46.android
++--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:appcompat-v7:23.1.1
+|    \--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:design:23.1.1
+|    +--- com.android.support:appcompat-v7:23.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:23.1.1
+|    |    +--- com.android.support:support-annotations:23.1.1
+|    |    \--- com.android.support:support-v4:23.1.1 (*)
+|    \--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:support-annotations:23.1.1
++--- com.taobao.android:weex_inspector:0.10.0.5
+\--- com.journeyapps:zxing-android-embedded:3.4.0
+     +--- com.google.zxing:core:3.2.1
+     \--- com.android.support:support-v4:23.1.0 -> 23.1.1 (*)
+
+_releaseUnitTestAnnotationProcessor - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseUnitTestApk - ## Internal use, do not manually configure ##
+No dependencies
+
+_releaseUnitTestCompile - ## Internal use, do not manually configure ##
+No dependencies
+
+androidJacocoAgent - The Jacoco agent to use to get coverage data.
+\--- org.jacoco:org.jacoco.agent:0.7.5.201505241946
+
+androidJacocoAnt - The Jacoco ant tasks to use to get execute Gradle tasks.
+\--- org.jacoco:org.jacoco.ant:0.7.5.201505241946
+     +--- org.jacoco:org.jacoco.core:0.7.5.201505241946
+     |    \--- org.ow2.asm:asm-debug-all:5.0.1
+     +--- org.jacoco:org.jacoco.report:0.7.5.201505241946
+     |    +--- org.jacoco:org.jacoco.core:0.7.5.201505241946 (*)
+     |    \--- org.ow2.asm:asm-debug-all:5.0.1
+     \--- org.jacoco:org.jacoco.agent:0.7.5.201505241946
+
+androidTestAnnotationProcessor - Classpath for the annotation processor for 'androidTest'.
+No dependencies
+
+androidTestApk - Classpath packaged with the compiled 'androidTest' classes.
+No dependencies
+
+androidTestCompile - Classpath for compiling the androidTest sources.
+No dependencies
+
+androidTestProvided - Classpath for only compiling the androidTest sources.
+No dependencies
+
+androidTestWearApp - Link to a wear app to embed for object 'androidTest'.
+No dependencies
+
+annotationProcessor - Classpath for the annotation processor for 'main'.
+No dependencies
+
+apk - Classpath packaged with the compiled 'main' classes.
+No dependencies
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+compile - Classpath for compiling the main sources.
++--- com.taobao.android:weex_sdk:0.10.0
++--- project :weexplugin
++--- project :appframework
+|    +--- com.squareup.picasso:picasso:2.5.2
+|    +--- com.facebook.fresco:fresco:0.10.0
+|    |    +--- com.facebook.fresco:drawee:0.10.0
+|    |    |    +--- com.android.support:support-v4:23.1.1
+|    |    |    |    \--- com.android.support:support-annotations:23.1.1
+|    |    |    \--- com.facebook.fresco:fbcore:0.10.0
+|    |    +--- com.facebook.fresco:fbcore:0.10.0
+|    |    \--- com.facebook.fresco:imagepipeline:0.10.0
+|    |         +--- com.android.support:support-v4:23.1.1 (*)
+|    |         +--- com.nineoldandroids:library:2.4.0
+|    |         +--- com.facebook.fresco:fbcore:0.10.0
+|    |         +--- com.facebook.fresco:imagepipeline-base:0.10.0
+|    |         |    +--- com.android.support:support-v4:23.1.1 (*)
+|    |         |    +--- com.nineoldandroids:library:2.4.0
+|    |         |    +--- com.facebook.fresco:fbcore:0.10.0
+|    |         |    \--- com.parse.bolts:bolts-android:1.1.4
+|    |         \--- com.parse.bolts:bolts-android:1.1.4
+|    \--- com.squareup.okhttp3:okhttp:3.8.1
+|         \--- com.squareup.okio:okio:1.13.0
++--- com.squareup.okhttp3:okhttp:3.8.1 (*)
++--- com.alibaba:fastjson:1.1.46.android
++--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:appcompat-v7:23.1.1
+|    \--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:design:23.1.1
+|    +--- com.android.support:appcompat-v7:23.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:23.1.1
+|    |    +--- com.android.support:support-annotations:23.1.1
+|    |    \--- com.android.support:support-v4:23.1.1 (*)
+|    \--- com.android.support:support-v4:23.1.1 (*)
++--- com.android.support:support-annotations:23.1.1
++--- com.taobao.android:weex_inspector:0.10.0.5
+\--- com.journeyapps:zxing-android-embedded:3.4.0
+     +--- com.google.zxing:core:3.2.1
+     \--- com.android.support:support-v4:23.1.0 -> 23.1.1 (*)
+
+debugAnnotationProcessor - Classpath for the annotation processor for 'debug'.
+No dependencies
+
+debugApk - Classpath packaged with the compiled 'debug' classes.
+No dependencies
+
+debugCompile - Classpath for compiling the debug sources.
+No dependencies
+
+debugProvided - Classpath for only compiling the debug sources.
+No dependencies
+
+debugWearApp - Link to a wear app to embed for object 'debug'.
+No dependencies
+
+default - Configuration for default artifacts.
+No dependencies
+
+default-mapping - Configuration for default mapping artifacts.
+No dependencies
+
+default-metadata - Metadata for the produced APKs.
+No dependencies
+
+provided - Classpath for only compiling the main sources.
+No dependencies
+
+releaseAnnotationProcessor - Classpath for the annotation processor for 'release'.
+No dependencies
+
+releaseApk - Classpath packaged with the compiled 'release' classes.
+No dependencies
+
+releaseCompile - Classpath for compiling the release sources.
+No dependencies
+
+releaseProvided - Classpath for only compiling the release sources.
+No dependencies
+
+releaseWearApp - Link to a wear app to embed for object 'release'.
+No dependencies
+
+testAnnotationProcessor - Classpath for the annotation processor for 'test'.
+No dependencies
+
+testApk - Classpath packaged with the compiled 'test' classes.
+No dependencies
+
+testCompile - Classpath for compiling the test sources.
+No dependencies
+
+testDebugAnnotationProcessor - Classpath for the annotation processor for 'testDebug'.
+No dependencies
+
+testDebugApk - Classpath packaged with the compiled 'testDebug' classes.
+No dependencies
+
+testDebugCompile - Classpath for compiling the testDebug sources.
+No dependencies
+
+testDebugProvided - Classpath for only compiling the testDebug sources.
+No dependencies
+
+testDebugWearApp - Link to a wear app to embed for object 'testDebug'.
+No dependencies
+
+testProvided - Classpath for only compiling the test sources.
+No dependencies
+
+testReleaseAnnotationProcessor - Classpath for the annotation processor for 'testRelease'.
+No dependencies
+
+testReleaseApk - Classpath packaged with the compiled 'testRelease' classes.
+No dependencies
+
+testReleaseCompile - Classpath for compiling the testRelease sources.
+No dependencies
+
+testReleaseProvided - Classpath for only compiling the testRelease sources.
+No dependencies
+
+testReleaseWearApp - Link to a wear app to embed for object 'testRelease'.
+No dependencies
+
+testWearApp - Link to a wear app to embed for object 'test'.
+No dependencies
+
+wearApp - Link to a wear app to embed for object 'main'.
+No dependencies
+
+(*) - dependencies omitted (listed previously)
+
+BUILD SUCCESSFUL
+
+Total time: 1.744 secs
